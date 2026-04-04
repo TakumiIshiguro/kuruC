@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int check(int year){
+    if (year % 4 == 0)
+        printf("夏季オリンピックが開催されます\n");
+    else if ((year - 2) % 4 == 0)
+        printf("冬季オリンピックが開催されます\n");
+    else 
+        printf("オリンピックが開催されません\n");
+    return 0;
+}
+
+int main(void){
+    int year;
+
+    printf("西暦年を入力してください\n");
+    scanf("%d", &year);
+    check(year);
+    
+    return 0;
+}
+
